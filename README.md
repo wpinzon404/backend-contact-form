@@ -93,39 +93,11 @@ La API quedará disponible en: `http://localhost:8080`
 
 | Método | Ruta                    | Descripción              |
 |--------|-------------------------|--------------------------|
-| GET    | `/api/contacts`         | Listar todos los contactos |
+| GET    | `/api/contacts`         | Listar todos los contactos 
 | GET    | `/api/contacts/{id}`    | Obtener un contacto      |
 | POST   | `/api/contacts`         | Crear un contacto        |
 | PUT    | `/api/contacts/{id}`    | Actualizar un contacto   |
 | DELETE | `/api/contacts/{id}`    | Eliminar un contacto     |
-
-### Ejemplo de body (POST / PUT)
-
-```json
-{
-  "name":    "Juan Pérez",
-  "email":   "juan@example.com",
-  "message": "Este es un mensaje de prueba"
-}
-```
-
-### Ejemplo de respuesta exitosa
-
-```json
-{
-  "status":  "success",
-  "message": "Contact saved successfully.",
-  "data": {
-    "id":         1,
-    "name":       "Juan Pérez",
-    "email":      "juan@example.com",
-    "message":    "Este es un mensaje de prueba",
-    "created_at": "2026-02-27 10:00:00"
-  }
-}
-```
-
----
 
 ## Estructura del proyecto
 
@@ -146,7 +118,7 @@ backend/
 │       └── ContactModel.php  # Modelo de la tabla contacts
 ├── public/
 │   └── index.php             # Punto de entrada de la aplicación
-├── .env                      # Variables de entorno (NO se sube a GitHub)
+├── .env                      # Variables de entorno
 ├── env                       # Plantilla de ejemplo para el .env
 ├── composer.json             # Dependencias PHP
 └── spark                     # CLI de CodeIgniter
