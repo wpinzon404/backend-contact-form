@@ -15,18 +15,12 @@ REST API para gestión de contactos construida con **CodeIgniter 4** y **MySQL**
 
 Asegúrate de tener instalado en tu máquina:
 
-- [PHP 8.2+](https://www.php.net/downloads)
-- [Composer](https://getcomposer.org/)
-- [MySQL 8+](https://dev.mysql.com/downloads/)
-
----
-
 ## Instalación
 
 ### 1. Clonar el repositorio
 
 ```bash
-git clone <url-del-repositorio>
+git clone https://github.com/wpinzon404/backend-contact-form.git
 cd backend
 ```
 
@@ -93,7 +87,6 @@ La API quedará disponible en: `http://localhost:8080`
 
 | Método | Ruta                    | Descripción              |
 |--------|-------------------------|--------------------------|
-| GET    | `/api/contacts`         | Listar todos los contactos 
 | GET    | `/api/contacts/{id}`    | Obtener un contacto      |
 | POST   | `/api/contacts`         | Crear un contacto        |
 | PUT    | `/api/contacts/{id}`    | Actualizar un contacto   |
@@ -135,8 +128,3 @@ Si el frontend corre en un puerto distinto al `5173`, agrégalo en `app/Config/C
 ```
 
 ---
-
-## Notas
-
-- El archivo `.env` está en `.gitignore` y **nunca** debe subirse al repositorio.
-- Usar `127.0.0.1` en vez de `localhost` evita problemas de conexión por socket en MySQL.
